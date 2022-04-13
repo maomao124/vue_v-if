@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：vue_v-if
+  File name(文件名): test1
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/13
+  Time(创建时间)： 12:50
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <button @click="rev">反转</button>
+    <button @click="add">增加</button>
+    <p v-if="false">test1</p>
+    <p v-if="true">test2</p>
+    <p v-if="isShow">test3</p>
+    <p v-if="number>10&number<13">test3</p>
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            isShow: false,
+            number: 3
+        }
+        ,
+        methods: {
+            rev: function ()
+            {
+                this.isShow = !this.isShow
+                console.log(this.isShow)
+            }
+            ,
+            add: function ()
+            {
+                this.number++;
+                console.log(this.number)
+            }
+        }
+    })
+</script>
+</body>
+</html>
