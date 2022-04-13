@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="vue_v-if:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>vue_v-if</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="vue_v-if-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="vue_v-if:war exploded" />
+    </root>
+  </artifact>
+</component>
